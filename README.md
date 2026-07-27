@@ -11,7 +11,7 @@ Most of my day job is in private repositories, so the graph below understates it
 **[Tool Calling Is a Distributed Systems Problem](https://github.com/mraj602/client-declared-tools)**
 What happens to function calling once there is more than one caller, more than one service, and a client that knows things the server doesn't. Covers where tool configuration lives and when you resolve it, why filtering a tool list is not enforcement, the three architectures hiding under "client-declared tools", and how to budget timeouts down a serial chain so you stop telling users something failed after it succeeded.
 
-More at **[writing.mraj602.cyphersage.in](https://writing.mraj602.cyphersage.in)**.
+More at **[medium.com/@mraj602](https://medium.com/@mraj602)**.
 
 ### Tools
 
