@@ -1,40 +1,35 @@
 # Mayank Raj
 
-**AI Software Engineer, Bengaluru.** I build production agentic systems — the agent runtime, the tool protocol, the retrieval layer, and the infrastructure they run on.
+AI software engineer in Bengaluru. I build production agentic systems: agent runtimes, tool protocols (MCP), retrieval, and the infrastructure they run on. Recent work includes a LangGraph assistant serving tens of thousands of users over text and voice, and an agent pipeline cut from 7 model round-trips to 1 at 54% lower cost per task.
 
-**Selected results:** a LangGraph assistant serving tens of thousands of users over text and voice · MCP servers with caller-scoped read/write tools · an agent pipeline cut from 7 model round-trips to 1, 54% cheaper per task.
-
-Most of my day job is in private repositories, so the graph below understates it. What I can share is here.
+Most of my day-to-day work lives in private repositories. My open-source work is below.
 
 ---
 
-### Writing
+## Switchyard
 
-**[Tool Calling Is a Distributed Systems Problem](https://github.com/mraj602/client-declared-tools)**
-What happens to function calling once there is more than one caller, more than one service, and a client that knows things the server doesn't. Covers where tool configuration lives and when you resolve it, why filtering a tool list is not enforcement, the three architectures hiding under "client-declared tools", and how to budget timeouts down a serial chain so you stop telling users something failed after it succeeded.
+**[Switchyard](https://github.com/mraj602/switchyard)** is an open-source, self-hosted board for running many Claude Code accounts across many machines. It shows every session's state, every account's usage limits, and alerts you when a session needs you, all on a hub you run yourself.
 
-More at **[medium.com/@mraj602](https://medium.com/@mraj602)**.
+- **One board** for every session on every machine, grouped by account: working, needs permission, asked a question, done, failed.
+- **Usage limits** for every account (5-hour, 7-day, per model) with reset times and history.
+- **Alerts** on a native Android app with its own connection to your hub (no Google push service, no proprietary Google code), or via Web Push, ntfy and desktop notifications.
+- **Peers:** sessions in different accounts and on different machines can message each other, end-to-end encrypted; the hub relays ciphertext only.
+- **Built as** a single static Go binary (`sy`) for the CLI and hub, plus a web board, an Electron desktop app and an Android app. AGPL-3.0.
 
-### Tools
+[Repository](https://github.com/mraj602/switchyard) · [Website](https://mraj602.github.io/switchyard/) · [Releases](https://github.com/mraj602/switchyard/releases)
 
-**[typst-resume](https://github.com/mraj602/typst-resume)** — Write a résumé in Markdown, get a one-page ATS-parseable PDF. Pandoc → Typst, so it compiles in milliseconds and the template is readable by anyone who can read a scripting language.
-
----
-
-### What I work on
-
-**Agent runtimes and tool protocols.** Model Context Protocol, caller-scoped tool access, client-declared tool contracts over a realtime transport. Binding a model to a small set of discovery meta-tools so a growing catalog never inflates per-turn context cost.
-
-**LLM platform engineering.** Provider-agnostic routing behind a gateway, tiering models by task difficulty with per-tier thinking budgets, and accounting for reasoning tokens separately — they are billed as output but are not part of the answer.
-
-**Retrieval.** Embeddings and pgvector, grounding answers in a tenant's own data rather than model priors.
-
-**Realtime voice.** LiveKit, streaming speech-to-text, and the particular problems of running voice on constrained embedded hardware.
-
-**The layer underneath.** Kubernetes, Terraform, Helm and ArgoCD on AWS. I operate what I build — the gateway, the tracing plane and the media stack included.
-
-**Guardrails for AI-assisted development.** Per-repository agent context, path-scoped rules, and a custom architecture-layering gate enforced on every pull request, so agent-generated code stays inside the architecture it was meant to respect.
+<sub>Switchyard is an unofficial, independent project. It is not affiliated with, endorsed by or sponsored by Anthropic. "Claude" and "Claude Code" are trademarks of Anthropic, PBC.</sub>
 
 ---
 
-`Python` · `FastAPI` · `Kotlin` · `LangGraph` · `LiteLLM` · `MCP` · `pgvector` · `LiveKit` · `Langfuse` · `Temporal` · `PostgreSQL` · `ClickHouse` · `Kubernetes` · `Terraform` · `AWS`
+## Writing
+
+**[Tool Calling Is a Distributed Systems Problem](https://github.com/mraj602/client-declared-tools)**: what happens to LLM function calling once there is more than one caller, more than one service, and a client that knows things the server doesn't. More on [Medium](https://medium.com/@mraj602).
+
+## Stack
+
+Python · Go · Kotlin · FastAPI · LangGraph · LiteLLM · MCP · pgvector · LiveKit · PostgreSQL · Kubernetes · Terraform · AWS
+
+## Contact
+
+GitHub [@mraj602](https://github.com/mraj602) · [mraj602@gmail.com](mailto:mraj602@gmail.com)
