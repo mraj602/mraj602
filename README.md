@@ -22,6 +22,22 @@ Most of my day-to-day work lives in private repositories. My open-source work is
 
 ---
 
+## What I work on
+
+**Agent runtimes and tool protocols.** Model Context Protocol, caller-scoped tool access, and client-declared tool contracts over a realtime transport. Binding a model to a small set of discovery meta-tools, so a growing catalog never inflates per-turn context cost.
+
+**LLM platform engineering.** Provider-agnostic routing behind a gateway, tiering models by task difficulty with per-tier thinking budgets, and accounting for reasoning tokens separately: they are billed as output but are not part of the answer.
+
+**Retrieval.** Embeddings and pgvector, grounding answers in a tenant's own data rather than model priors.
+
+**Realtime voice.** LiveKit, streaming speech-to-text, and running voice on constrained embedded hardware.
+
+**The layer underneath.** Kubernetes, Terraform, Helm and ArgoCD on AWS. I operate what I build, including the gateway, the tracing plane and the media stack.
+
+**Guardrails for AI-assisted development.** Per-repository agent context, path-scoped rules, and an architecture-layering gate on every pull request, so agent-generated code stays inside the architecture it was meant to respect.
+
+---
+
 ## Writing
 
 **[Tool Calling Is a Distributed Systems Problem](https://github.com/mraj602/client-declared-tools)**: what happens to LLM function calling once there is more than one caller, more than one service, and a client that knows things the server doesn't.
@@ -30,7 +46,7 @@ I write about building agent systems on **[Medium](https://medium.com/@mraj602)*
 
 ## Stack
 
-Python · Go · Kotlin · FastAPI · LangGraph · LiteLLM · MCP · pgvector · LiveKit · PostgreSQL · Kubernetes · Terraform · AWS
+Python · Go · Kotlin · FastAPI · LangGraph · LiteLLM · MCP · pgvector · LiveKit · Langfuse · Temporal · PostgreSQL · ClickHouse · Kubernetes · Terraform · AWS
 
 ## Contact
 
