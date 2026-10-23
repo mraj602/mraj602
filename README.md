@@ -24,7 +24,9 @@ Most of my day-to-day work lives in private repositories. My open-source work is
 
 ## Writing
 
-**[Tool Calling Is a Distributed Systems Problem](https://github.com/mraj602/client-declared-tools)**: what happens to LLM function calling once there is more than one caller, more than one service, and a client that knows things the server doesn't. More on [Medium](https://medium.com/@mraj602).
+**[Tool Calling Is a Distributed Systems Problem](https://github.com/mraj602/client-declared-tools)**: what happens to LLM function calling once there is more than one caller, more than one service, and a client that knows things the server doesn't.
+
+I write about building agent systems on **[Medium](https://medium.com/@mraj602)**.
 
 ## Stack
 
@@ -32,4 +34,4 @@ Python · Go · Kotlin · FastAPI · LangGraph · LiteLLM · MCP · pgvector · 
 
 ## Contact
 
-GitHub [@mraj602](https://github.com/mraj602) · [mraj602@gmail.com](mailto:mraj602@gmail.com)
+GitHub [@mraj602](https://github.com/mraj602) · Medium [@mraj602](https://medium.com/@mraj602) · [mraj602@gmail.com](mailto:mraj602@gmail.com)
